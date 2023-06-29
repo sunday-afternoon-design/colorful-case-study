@@ -106,6 +106,12 @@ import p33 from '../../public/p33.svg';
 import p34 from '../../public/p34.svg';
 import p35 from '../../public/p35.svg';
 
+
+var largetypewrapper = document.querySelector('#largeglyphwrapper')
+var largeglyph = document.querySelector('#largeglyph')
+largeglyph.src = A
+    // console.log(largeglyph)
+
 function glyphsetup() {
     var uppercasegrid = document.querySelector(".Uppercase");
     var lowercasegrid = document.querySelector(".Lowercase");
@@ -124,10 +130,16 @@ function glyphsetup() {
         div.classList.add("typecard");
         div.setAttribute('data-name', characters1[i]);
 
+
         var divglyph = document.createElement("img");
         divglyph.src = characters1[i];
         divglyph.classList.add("glyph")
         div.appendChild(divglyph);
+
+
+        // Add event listeners for mouseover and mouseout
+        // divcard.addEventListener('mouseover', handleMouseOver);
+        // divcard.addEventListener('mouseout', handleMouseOut);
     }
 
     var characters2 = [a, b, c, d, e, f, g, h, characteri, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
@@ -149,6 +161,7 @@ function glyphsetup() {
     }
 
     var characters3 = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
+    var characters3n = ["n0", "n1", "n2", "n3", "n4", "n5", "n6", "n7", "n8", "n9"];
     for (var i = 0; i < characters3.length; i++) {
         var divcard = document.createElement("div");
         numbergrid.appendChild(divcard);
@@ -185,14 +198,31 @@ function glyphsetup() {
     }
 }
 
-
-
 glyphsetup()
 
 let card = document.querySelectorAll('.typecard')
 card.forEach(function(element) {
     element.addEventListener('mouseover', function(event) {
         let dataName = this.getAttribute('data-name');
-        // console.log(dataName)
+        console.log(dataName)
+            // this.style.transform = 'scale(1.2)';
+        largeglyph.src = dataName
     });
 });
+
+
+
+
+// // Event handler for mouseover
+// function handleMouseOver(event) {
+//     // Increase the size of the divcard when hovering over it
+//     event.target.style.transform = 'scale(1.2)';
+//     event.target.style.zIndex = '9999';
+// }
+
+// // Event handler for mouseout
+// function handleMouseOut(event) {
+//     // Reset the size and position of the divcard when the mouse leaves it
+//     event.target.style.transform = '';
+//     event.target.style.zIndex = '';
+// }

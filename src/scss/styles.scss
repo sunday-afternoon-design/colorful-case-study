@@ -1,0 +1,63 @@
+@import "bootstrap/scss/bootstrap";
+// @import "./pubilc/vtc.woff2";
+// @font-face {
+//     font-family: 'colorful';
+//     src: url('./fonts/vtc.woff2') format('woff2');
+//     /* Add additional font formats if necessary */
+//     /* Update 'path/to/font' with the actual path to your font files */
+// }
+@font-face {
+    font-family: 'Halyard';
+    src: url('../../public/Halyard.otf') format('opentype');
+    /* Add additional font formats if necessary */
+    /* Update 'path/to/font' with the actual path to your font files */
+}
+
+body {
+    background-color: #FFF01D;
+    font-family: 'Halyard';
+    margin-bottom: 70px;
+}
+
+.grid {
+    // font-family: 'colorful';
+    font-size: 52px;
+}
+
+.wrapper {
+    width: 85px;
+    height: 85px;
+}
+
+.typecard {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B1A70F;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.typecard:hover {
+    background-color: white;
+    border-color: black;
+}
+
+.glyph {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: -10px;
+}
+
+.subtitle {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.sectiontitle {
+    margin-top: 10px;
+    margin-left: 20px;
+}

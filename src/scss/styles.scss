@@ -15,14 +15,21 @@
 }
 
 body {
-    background-color: #FFF01D;
+    // background-color: #FFF01D;
+    background-color: black;
     font-family: 'Halyard';
     margin-bottom: 70px;
 }
 
+// #h {
+//     position: relative;
+//     width: 80vw;
+//     margin-left: 10vw;
+// }
 #allglyph {
     height: 80vh;
-    margin-top: 70px;
+    margin-top: 10vh;
+    margin-right: 9vw;
 }
 
 // #firstsubtitle {
@@ -38,37 +45,51 @@ body {
 }
 
 .typecard {
+    position: relative;
+    left: -.5px;
     border-style: solid;
-    border-width: 2px;
-    border-color: #B1A70F;
-    border-radius: 10px;
-    width: 61px;
-    height: 61px;
+    border-width: .5px;
+    // border-color: #B1A70F;
+    border-color: #373737;
+    // border-radius: 8px;
+    width: 65px;
+    height: 65px;
     font-size: 38px;
     font-family: 'colorful';
+    color: white;
+    background-color: black;
+    transition: background-color 0.5s ease;
 }
 
 .typecard:hover {
     background-color: white;
-    border-color: black;
+    color: black;
+    // border-color: black;
     // z-index: 0;
 }
 
+.glyph {
+    position: relative;
+    top: 5px;
+}
+
 #largeglyphwrapper {
-    margin-top: 70px;
-    margin-right: 45px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+    margin-top: 10vh;
+    margin-right: 4vw;
+    margin-left: 10vw;
+    background-color: white;
+    color: black;
+    // border-radius: 10px;
     // width: 100%;
     // height: 30vw;
     font-family: 'colorful';
-    font-size: 50vh
+    text-align: center;
+    font-size: 50vh;
+    height: 80vh
 }
 
 #largeglyph {
-    // height: 100%;
-    // height: 100%;
+    margin-top: 2vh;
 }
 
 hr {
@@ -78,5 +99,5 @@ hr {
 
 .grid {
     // margin
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }

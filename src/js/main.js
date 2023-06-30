@@ -109,7 +109,7 @@ import p35 from '../../public/p35.svg';
 
 var largetypewrapper = document.querySelector('#largeglyphwrapper')
 var largeglyph = document.querySelector('#largeglyph')
-largeglyph.src = A
+largeglyph.innerHTML = "A"
     // console.log(largeglyph)
 
 function glyphsetup() {
@@ -227,16 +227,36 @@ let card = document.querySelectorAll('.typecard')
 card.forEach(function(element) {
     element.addEventListener('mouseover', function(event) {
         let dataName = this.getAttribute('data-name');
-        console.log(dataName)
-            // this.style.transform = 'scale(1.2)';
-            // largeglyph.src = dataName
+        // console.log(dataName)
+        // this.style.transform = 'scale(1.2)';
+        // largeglyph.src = dataName
         largeglyph.innerHTML = dataName
+        console.log(largeglyph.innerHTML)
     });
+    let dataname = element.getAttribute;
 });
 
+var elements = document.getElementsByClassName('typecard');
+var currentElement = null;
 
+function handleHover() {
+    if (currentElement) {
+        currentElement.style.backgroundColor = 'black';
+        currentElement.style.color = 'white';
+    }
+    this.style.backgroundColor = 'white';
+    this.style.color = 'black';
+    currentElement = this;
+}
 
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('mouseover', handleHover);
+}
 
+// if (dataname = largeglyph.innerHTML) {
+//     element.style.backgroundColor = 'white';
+//     element.style.color = 'black'
+// }
 // // Event handler for mouseover
 // function handleMouseOver(event) {
 //     // Increase the size of the divcard when hovering over it

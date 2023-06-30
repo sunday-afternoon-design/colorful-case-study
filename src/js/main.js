@@ -118,7 +118,8 @@ function glyphsetup() {
     var numbergrid = document.querySelector(".Numbers");
     var puncgrid = document.querySelector(".Punctuation");
 
-    var characters1 = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z];
+    // var characters1 = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z];
+    var characters1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     for (var i = 0; i < characters1.length; i++) {
         var divcard = document.createElement("div");
         uppercasegrid.appendChild(divcard);
@@ -130,9 +131,13 @@ function glyphsetup() {
         div.classList.add("typecard");
         div.setAttribute('data-name', characters1[i]);
 
+        // var divglyph = document.createElement("img");
+        // divglyph.src = characters1[i];
+        // divglyph.classList.add("glyph")
+        // div.appendChild(divglyph);
 
-        var divglyph = document.createElement("img");
-        divglyph.src = characters1[i];
+        var divglyph = document.createElement("dvi");
+        divglyph.textContent = characters1[i];
         divglyph.classList.add("glyph")
         div.appendChild(divglyph);
 
@@ -142,7 +147,8 @@ function glyphsetup() {
         // divcard.addEventListener('mouseout', handleMouseOut);
     }
 
-    var characters2 = [a, b, c, d, e, f, g, h, characteri, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+    // var characters2 = [a, b, c, d, e, f, g, h, characteri, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+    var characters2 = "abcdefghijklmnopqrstuvwxyz";
     for (var i = 0; i < characters2.length; i++) {
         var divcard = document.createElement("div");
         lowercasegrid.appendChild(divcard);
@@ -154,14 +160,20 @@ function glyphsetup() {
         div.classList.add("typecard");
         div.setAttribute('data-name', characters2[i]);
 
-        var divglyph = document.createElement("img");
-        divglyph.src = characters2[i];
+        // var divglyph = document.createElement("img");
+        // divglyph.src = characters2[i];
+        // divglyph.classList.add("glyph")
+        // div.appendChild(divglyph);
+
+        var divglyph = document.createElement("div");
+        divglyph.textContent = characters2[i];
         divglyph.classList.add("glyph")
         div.appendChild(divglyph);
     }
 
-    var characters3 = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
-    var characters3n = ["n0", "n1", "n2", "n3", "n4", "n5", "n6", "n7", "n8", "n9"];
+    // var characters3 = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
+    var characters3n = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var characters3 = "0123456789";
     for (var i = 0; i < characters3.length; i++) {
         var divcard = document.createElement("div");
         numbergrid.appendChild(divcard);
@@ -173,13 +185,19 @@ function glyphsetup() {
         div.classList.add("typecard");
         div.setAttribute('data-name', characters3[i]);
 
-        var divglyph = document.createElement("img");
-        divglyph.src = characters3[i];
+        // var divglyph = document.createElement("img");
+        // divglyph.src = characters3[i];
+        // divglyph.classList.add("glyph")
+        // div.appendChild(divglyph);
+
+        var divglyph = document.createElement("div");
+        divglyph.textContent = characters3n[i];
         divglyph.classList.add("glyph")
         div.appendChild(divglyph);
     }
 
-    var characters4 = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35];
+    // var characters4 = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35];
+    var characters4 = [".", ",", ":", ";", "?", "!", "*", "_", "&", ",", "„", "‘", "’", '“', '”', "'", '"', "-", "–", "—", "/", "\\", "|", "(", ")", "[", "]", "{", "}", "•", "‹", "›", "«", "»", "@"];
     for (var i = 0; i < characters4.length; i++) {
         var divcard = document.createElement("div");
         puncgrid.appendChild(divcard);
@@ -191,8 +209,13 @@ function glyphsetup() {
         div.classList.add("typecard");
         div.setAttribute('data-name', characters4[i]);
 
-        var divglyph = document.createElement("img");
-        divglyph.src = characters4[i];
+        // var divglyph = document.createElement("img");
+        // divglyph.src = characters4[i];
+        // divglyph.classList.add("glyph")
+        // div.appendChild(divglyph);
+
+        var divglyph = document.createElement("div");
+        divglyph.textContent = characters4[i];
         divglyph.classList.add("glyph")
         div.appendChild(divglyph);
     }
@@ -206,7 +229,8 @@ card.forEach(function(element) {
         let dataName = this.getAttribute('data-name');
         console.log(dataName)
             // this.style.transform = 'scale(1.2)';
-        largeglyph.src = dataName
+            // largeglyph.src = dataName
+        largeglyph.innerHTML = dataName
     });
 });
 

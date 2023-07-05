@@ -18,13 +18,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sunday-afternoon-design/colorful-case-study.git"
+        "url": "git+https://github.com/sunday-afternoon-design/colorful-case-study-desktop.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/sunday-afternoon-design/colorful-case-study/issues"
+        "url": "https://github.com/sunday-afternoon-design/colorful-case-study-desktop/issues"
     },
-    "homepage": "https://github.com/sunday-afternoon-design/colorful-case-study#readme"
+    "homepage": "https://github.com/sunday-afternoon-design/colorful-case-study-desktop#readme"
 }

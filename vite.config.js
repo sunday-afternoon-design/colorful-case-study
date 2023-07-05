@@ -1,6 +1,6 @@
 // export default {
 //     // config options
-//     base: '/colorful-case-study/'
+//     base: '/colorful-case-study-desktop/'
 // }
 
 

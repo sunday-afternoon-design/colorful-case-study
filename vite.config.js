@@ -11,7 +11,7 @@ export default {
     build: {
         outDir: '../dist'
     },
-    base: '/colorful-case-study/',
+    base: '/colorful-case-study-desktop/',
     server: {
         port: 8080
     }

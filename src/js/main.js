@@ -31,7 +31,7 @@ function glyphsetup() {
         div.classList.add("typecard");
         div.setAttribute('data-name', characters1[i]);
 
-        var divglyph = document.createElement("dvi");
+        var divglyph = document.createElement("div");
         divglyph.textContent = characters1[i];
         divglyph.classList.add("glyph")
         div.appendChild(divglyph);

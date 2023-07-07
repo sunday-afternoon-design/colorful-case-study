@@ -12,6 +12,7 @@
 :root {
     --vtcfontsize: 2.85vw;
     --vtcboxsize: 4.5vw;
+    --vtcbox2size: 3vw;
     
   }
 
@@ -99,6 +100,6 @@ body {
 
 .grid {
     // margin
-    margin-bottom: var(--vtcboxsize);
+    margin-bottom: var(--vtcbox2size);
     overflow-x: hidden;
 }

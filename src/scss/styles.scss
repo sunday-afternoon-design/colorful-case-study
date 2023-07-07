@@ -13,10 +13,7 @@
     --vtcfontsize: 2.85vw;
     --vtcboxsize: 4.5vw;
     --vtcbox2size: 3vw;
-    
-  }
-
-
+}
 
 body {
     // background-color: #FFF01D;
@@ -31,6 +28,7 @@ body {
 //     width: 80vw;
 //     margin-left: 10vw;
 // }
+
 #allglyph {
     height: 80vh;
     margin-top: 10vh;
@@ -39,7 +37,6 @@ body {
     overflow-x: hidden;
     overflow-y:hidden
 }
-
 
 .wrapper {
     width: var(--vtcboxsize);
@@ -97,7 +94,6 @@ body {
 #largeglyph {
     margin-top: 2vh;
 }
-
 
 .grid {
     // margin

@@ -9,16 +9,18 @@
     src: url('../../public/colorful.ttf') format('truetype');
 }
 
-.sectiontitle {
-    margin-top: 10px;
-    margin-left: 20px;
-}
+:root {
+    --vtcfontsize: 2.85vw;
+    --vtcboxsize: 4.5vw;
+  }
+
+
 
 body {
     // background-color: #FFF01D;
     background-color: black;
     font-family: 'Halyard';
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
     overflow-x: hidden;
 }
 
@@ -38,9 +40,9 @@ body {
 
 
 .wrapper {
-    width: 65px;
-    height: 65px;
-    overflow-x: hidden;
+    width: var(--vtcboxsize);
+    height: var(--vtcboxsize);
+    // overflow-x: hidden;
 }
 
 .typecard {
@@ -51,14 +53,14 @@ body {
     // border-color: #B1A70F;
     border-color: #373737;
     // border-radius: 8px;
-    width: 65px;
-    height: 65px;
-    font-size: 38px;
+    width:  var(--vtcboxsize);
+    height:  var(--vtcboxsize);
+    font-size:  var(--vtcfontsize);
     font-family: 'colorful';
     color: white;
     background-color: black;
     transition: background-color 0.5s ease;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .typecard:hover {
@@ -70,8 +72,8 @@ body {
 
 .glyph {
     position: relative;
-    top: 5px;
-    overflow-x: hidden;
+    top: 0.2vw;
+    // overflow-x: hidden;
 }
 
 #largeglyphwrapper {
@@ -93,13 +95,9 @@ body {
     margin-top: 2vh;
 }
 
-hr {
-    padding: 0;
-    margin-top: 0px;
-}
 
 .grid {
     // margin
-    margin-bottom: 65px;
+    margin-bottom: var(--vtcboxsize);
     overflow-x: hidden;
 }

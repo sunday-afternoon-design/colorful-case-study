@@ -20,7 +20,6 @@ body {
     font-family: 'Halyard';
     margin-bottom: 70px;
     overflow-x: hidden;
-
 }
 
 // #h {
@@ -41,6 +40,7 @@ body {
 .wrapper {
     width: 65px;
     height: 65px;
+    overflow-x: hidden;
 }
 
 .typecard {
@@ -58,6 +58,7 @@ body {
     color: white;
     background-color: black;
     transition: background-color 0.5s ease;
+    overflow-x: hidden;
 }
 
 .typecard:hover {
@@ -70,6 +71,7 @@ body {
 .glyph {
     position: relative;
     top: 5px;
+    overflow-x: hidden;
 }
 
 #largeglyphwrapper {
@@ -99,4 +101,5 @@ hr {
 .grid {
     // margin
     margin-bottom: 65px;
+    overflow-x: hidden;
 }
